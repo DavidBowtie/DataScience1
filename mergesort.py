@@ -52,7 +52,7 @@ plt.figure(figsize=(12, 5))
 
 # Plot 1: Liste vor Sortierung
 plt.subplot(1, 2, 1)
-plt.bar(range(len(my_list)), original_list, color='skyblue')
+plt.bar(range(len(my_list)), original_list)
 plt.title("Vorher")
 plt.xlabel("Index")
 plt.ylabel("Wert")
@@ -61,7 +61,7 @@ merge_sort(my_list) # Sortiere die Liste
 
 # Plot 2: Liste nach Sortierung
 plt.subplot(1, 2, 2)
-plt.bar(range(len(my_list)), my_list, color='lightcoral')
+plt.bar(range(len(my_list)), my_list)
 plt.title("Nachher")
 plt.xlabel("Index")
 plt.ylabel("Wert")
